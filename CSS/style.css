@@ -30,6 +30,9 @@ h6 {
 /* Navigation */
 
 nav {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -66,7 +69,7 @@ nav .navigation ul li a {
 nav .navigation ul li a:hover {
     color: #fdc938;
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 700;
     transition: all .3s ease;
 }
 
@@ -83,4 +86,100 @@ nav .navigation ul li a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-top: 40px;
 }
+
+#home h2{
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+#home p{
+    width: 50%;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+#home .btn {
+    margin-top: 20px;
+}
+#home a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+#home a.blue{
+    color: #fff;
+    background: rgb(21, 21, 100);
+}
+
+#home a.blue:hover{
+    background: #fff;
+    color: rgb(21, 21, 100);
+    transition: all .8s ease;
+}
+
+#home a.yellow{
+    color: #fff;
+    background: #fdc938;
+}
+
+#home a.yellow:hover{
+    background: #fff;
+    color: rgb(21, 21, 100);
+    transition: all .8s ease;
+}
+
+/* .....Features.... */
+
+#features {
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}
+
+#features .fea-base {
+    /* display: flex;
+    gap: 10px;
+    margin-bottom: 30px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    /* grid-gap: 1rem; */
+
+}
+
+#features .fea-box {
+    background: #f9f9ff;
+    text-align: start;
+}
+
+#features .fea-base {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#features .fea-box i {
+    font-size: 2.3rem;
+    color: rgb(44, 44, 80);
+}
+
+#features .fea-box h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(46, 46, 59);
+    padding: 13px 0 7px 0;
+}
+
+#features .fea-box p {
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: rgb(70, 70, 87);
+}
+
