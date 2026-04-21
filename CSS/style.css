@@ -38,7 +38,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1vw 8vw;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+    z-index: 999;
 }
 
 nav img {
@@ -143,19 +144,19 @@ nav .navigation ul li a:hover {
     text-align: center;
 }
 
-#features .fea-base {
-    /* display: flex;
+/* #features .fea-base {
+    display: flex;
     gap: 10px;
-    margin-bottom: 30px; */
+    margin-bottom: 30px;
+    padding-right: 10px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    /* grid-gap: 1rem; */
-
-}
+} */
 
 #features .fea-box {
     background: #f9f9ff;
     text-align: start;
+    padding-left: 10px
 }
 
 #features .fea-base {
