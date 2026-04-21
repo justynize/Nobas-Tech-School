@@ -286,6 +286,7 @@ nav .navigation ul li a:hover {
     padding: 15px 10px;
     border: 1px solid rgba(33, 38, 0135, 0.37);
     outline: none;
+    border-radius: 5px;
 }
 
 #registration .form .btn .blue{
@@ -301,4 +302,47 @@ nav .navigation ul li a:hover {
 #registration .form .btn .blue:hover{
       background: rgb(21, 21, 100);
       color: #fff;
+      transition: all .8s ease;
+}
+
+#registration .form input::placeholder {
+    color: #413c3c;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* ...Profiles... */
+
+#experts {
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+}
+
+#experts .experts-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+#experts .experts-box .profile{
+    background: #fafaf1;
+    padding: 30px 10px;
+}
+
+.pro-links{
+    margin-top: 10px;
+}
+
+.pro-links i{
+    font-size: 2.3rem;
+    color: rgb(44, 44, 80);
+    padding: 10px 13px;
+    border-radius: 1px solid rgb(21, 21, 100);
+    cursor: pointer;
+}
+
+.pro-links i:hover{
+    color: rgb(21, 21, 100);
+    transition: all .3s ease;
 }
