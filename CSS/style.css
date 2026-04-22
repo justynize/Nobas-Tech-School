@@ -47,6 +47,19 @@ nav img {
     cursor: pointer;
 }
 
+#menu-btn{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#menu-close {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
 nav .navigation ul {
     display: flex;
     justify-content: flex-end;
@@ -59,6 +72,9 @@ nav .navigation ul li {
     margin-left: 30px;
 }
 
+nav .navigation {
+    display: flex;
+}
 nav .navigation ul li a {
     text-decoration: none;
     color: rgb(21, 21, 100);
@@ -341,9 +357,8 @@ nav .navigation ul li a:hover {
 }
 .pro-links i{
     font-size: 2.3rem;
-    color: rgb(44, 44, 80);
+    color: #5f7185;
     padding: 10px 13px;
-    border-radius: 1px solid rgb(21, 21, 100);
     cursor: pointer;
 }
 
@@ -439,6 +454,7 @@ footer .copyright {
     align-items: center;
     width: 100%;
     flex-wrap: wrap;
+    gap: 300px;
 }
 
 footer .copyright a i{
@@ -457,4 +473,86 @@ footer .copyright p{
     color: #fff;
     font-size: 0.9rem;
     font-weight: 400;
+}
+
+
+
+
+
+
+
+
+/* ....Media Queries.... */
+
+@media (max-width: 768px) {
+    nav {
+        padding: 15px 20px;
+    }
+    nav img {
+        width: 130px;
+    }
+    #menu-btn{
+    display: initial;
+}
+
+#menu-close {
+    display: initial;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 20px 0 20px 20px;
+}
+nav .navigation ul {
+    position: absolute;
+    top: 0;
+    right: -220px;
+    width: 220px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: rgba(17, 20, 104, 0.45);
+    backdrop-filter: blur(4.5px);
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: 0.7s ease;
+}
+
+nav .navigation ul.active {
+    right: 0;
+}
+
+nav .navigation ul li{
+    padding:20px 0 20px 40px;
+    margin-right: 0;
+}
+
+nav .navigation ul li a{
+    color: #fff;
+}
+
+#home {
+    padding-top: 0;
+}
+
+#home p {
+    width: 90%;
+}
+#features {
+    padding: 8vw 4vw 0 4vw;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+#features .fea-base {
+ width: 100%;
+}
+
+#features {
+    padding: 8vw 4vw 0 4vw;
+}
+
+#features .fea-box h3 {
+    font-size: 1rem;
+}
 }
