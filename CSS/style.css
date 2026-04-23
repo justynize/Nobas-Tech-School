@@ -545,7 +545,7 @@ h1 {
 }
 
 #features .fea-base {
- width: 100%;
+padding: 8vw 4vw 0 4vw;
 }
 
 #features {
@@ -554,5 +554,68 @@ h1 {
 
 #features .fea-box h3 {
     font-size: 1rem;
+}
+
+#course {
+    padding: 8vw 4vw 0 4vw;
+}
+
+#registration {
+    width: 100%;
+    flex-direction: column;
+    padding: 8vw 4vw 8vw 4vw;
+}
+#registration .reminder .time {
+    display: flex;
+    margin: 40px;
+}
+
+#registration .reminder .time .date {
+    /* text-align: center;
+    padding: 13px 33px;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 5px;
+    margin: 0 5px 10px 5px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    font-size: 1.1rem;
+    font-weight: 600; */
+    font-size: 11px;
+    padding:10px 15px ;
+}
+#registration .reminder p{
+    text-align: center;
+}
+#registration .reminder h1 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+#experts h1{
+    font-size: 1.5rem;
+}
+
+footer .copyright p {
+    font-size: 0.9rem;
+}
+
+footer .copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 300px;
+}
+}
+
+@media (max-width: 475px) {
+    #registration {
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 }
