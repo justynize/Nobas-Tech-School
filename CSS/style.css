@@ -618,4 +618,47 @@ footer .copyright {
     justify-content: center;
     align-items: center;
 }
+
+#home h2 {
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+#home p {
+    width: 80%;
+}
+#home a.yellow {
+    padding: 10px 25px;
+}
+
+#features .fea-base {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#features .fea-box h3 {
+    text-align: center;
+}
+#features .fea-box p {
+   text-align: center;
+}
+#features .fea-box i {
+   margin-left: 40%;
+   margin-top: 5px;
+}
+#course .courses img {
+    width: 100%;
+}
+#course .courses .cost {
+    right: 20px;
+    margin-right: 50px;
+}
+#registration {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 }
